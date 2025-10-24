@@ -12,11 +12,12 @@
             color: #333;
         }
 
+        /* Header */
         header {
             background-color: #1f2937;
             color: #fff;
             text-align: center;
-            padding: 3rem 1rem;
+            padding: 2rem 1rem;
         }
         header h1 {
             font-size: 3rem;
@@ -27,6 +28,46 @@
             margin-top: 0.5rem;
         }
 
+        /* Sección About / Presentación */
+        .about {
+            padding: 3rem 1rem;
+            background-color: #ffffff;
+        }
+
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            gap: 2rem;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3b82f6;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Sección de proyectos */
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -36,6 +77,7 @@
             margin: 0 auto;
         }
 
+        /* Tarjetas de proyectos */
         .project-card {
             background-color: #fff;
             border-radius: 12px;
@@ -85,6 +127,7 @@
             background-color: #2563eb;
         }
 
+        /* Footer */
         footer {
             text-align: center;
             padding: 2rem;
@@ -100,20 +143,32 @@
         <p>Explora mis proyectos y sus repositorios en GitHub</p>
     </header>
 
+    <!-- Sección About / Presentación -->
+    <section class="about">
+        <div class="about-container">
+            <img class="profile-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/perfil.png" alt="Mi foto">
+            <div class="about-text">
+                <h2>Amy Marlene</h2>
+                <p>¡Hola! Soy estudiante de Ingeniería Biomédica     y este es mi portafolio de proyectos. Explora mis trabajos haciendo clic en cada tarjeta.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
     <section class="projects">
-        <!-- Analisis de datos para estilos y patrones de sueño. -->
+        <!-- Analisis de datos para estilos y patones de sueño. -->
         <div class="project-card">
-            <img class="project-image" src="https://raw.github.com/amymarlene/mi-portafolio/blob/main/proyecto1.png?raw=true" alt="Proyecto 1">
+            <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/proyecto1.png" alt="Proyecto 1">
             <div class="project-content">
                 <h3>Proyecto 1</h3>
-                <p>Este proyecto analiza el dataset "Lifestyle and Sleep Patterns" de Kaggle, explorando cómo los hábitos de vida afectan los niveles de estrés. El objetivo es Analizar la relación entre hábitos de vida y niveles de estrés, preparando los datos para un modelo predictivo.</p>
+                <p>Analizar la relación entre hábitos de vida y niveles de estrés, identificando variables que afectan la salud y preparando los datos para un posible modelado predictivo..</p>
                 <a href="https://github.com/amymarlene/proyecto1" target="_blank">Ver repositorio</a>
             </div>
         </div>
 
         <!-- Proyecto 2 -->
         <div class="project-card">
-            <img class="project-image" src="https://via.placeholder.com/400x180.png?text=Proyecto+2" alt="Proyecto 2">
+            <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/proyecto2.png" alt="Proyecto 2">
             <div class="project-content">
                 <h3>Proyecto 2</h3>
                 <p>Breve explicación de lo que hace el proyecto 2 y su propósito.</p>
@@ -123,7 +178,7 @@
 
         <!-- Proyecto 3 -->
         <div class="project-card">
-            <img class="project-image" src="https://via.placeholder.com/400x180.png?text=Proyecto+3" alt="Proyecto 3">
+            <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/proyecto3.png" alt="Proyecto 3">
             <div class="project-content">
                 <h3>Proyecto 3</h3>
                 <p>Breve explicación de lo que hace el proyecto 3 y su propósito.</p>
@@ -138,3 +193,4 @@
 
 </body>
 </html>
+
