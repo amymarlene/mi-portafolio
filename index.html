@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
+    <!-- Fuente elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #f0f2f5;
             color: #333;
         }
 
         /* Header */
         header {
-            background-color: #1f2937;
-            color: #fff;
+            background-color: #f8cde0; /* rosado pastel */
+            color: #4b2e2e;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         header h1 {
             font-size: 3rem;
             margin: 0;
+            font-weight: 600;
         }
         header p {
             font-size: 1.2rem;
             margin-top: 0.5rem;
+            font-weight: 400;
         }
 
         /* Sección About / Presentación */
@@ -48,7 +53,8 @@
             height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #3b82f6;
+            border: 3px solid #e28ea6;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         .about-text {
@@ -59,7 +65,7 @@
         .about-text h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            color: #111827;
+            color: #5a3749;
         }
 
         .about-text p {
@@ -80,7 +86,7 @@
         /* Tarjetas de proyectos */
         .project-card {
             background-color: #fff;
-            border-radius: 12px;
+            border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
@@ -92,19 +98,19 @@
 
         .project-image {
             width: 100%;
-            height: 180px;
+            height: 200px;
             object-fit: cover;
         }
 
         .project-content {
-            padding: 1rem 1.5rem 2rem 1.5rem;
+            padding: 1.5rem;
             text-align: center;
         }
 
         .project-content h3 {
             margin: 1rem 0 0.5rem 0;
             font-size: 1.5rem;
-            color: #111827;
+            color: #5a3749;
         }
 
         .project-content p {
@@ -117,17 +123,17 @@
         .project-button {
             display: inline-block;
             margin: 0 auto;
-            padding: 0.5rem 1rem;
-            background-color: #3b82f6;
+            padding: 0.7rem 1.3rem;
+            background-color: #e28ea6; /* rosa más fuerte */
             color: #fff;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
             transition: background-color 0.3s;
             text-align: center;
         }
         .project-button:hover {
-            background-color: #2563eb;
+            background-color: #d26b8a; /* tono más oscuro al pasar el cursor */
         }
 
         /* Footer */
@@ -136,6 +142,16 @@
             padding: 2rem;
             color: #777;
             font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #d26b8a;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -181,11 +197,11 @@
 
         <!-- Proyecto 3 -->
         <div class="project-card">
-            <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/Proyecto3.png" alt="Proyecto 3">
+            <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/Analisis-De-Datos-Regresion/main/preview.png" alt="Proyecto 3">
             <div class="project-content">
-                <h3>Analisis de datos-Regresión Para Seguro médico</h3>
+                <h3>Análisis de datos - Regresión para seguro médico</h3>
                 <p>Este proyecto analiza un dataset de 1,338 personas en Estados Unidos con información sobre costos de seguros médicos y variables demográficas y de salud.</p>
-                <a href="https://github.com/amymarlene/proyecto3" target="_blank" class="project-button">Ver repositorio</a>
+                <a href="https://github.com/amymarlene/Analisis-De-Datos-Regresion" target="_blank" class="project-button">Ver repositorio</a>
             </div>
         </div>
     </section>
