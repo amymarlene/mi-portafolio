@@ -4,47 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <!-- Fuente elegante -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Fuente elegante y moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(to bottom right, #fde2e4, #f8edeb, #e2ece9, #cfe0e8);
+            color: #4a3f55;
         }
 
         /* Header */
         header {
-            background-color: #f8cde0; /* rosado pastel */
-            color: #4b2e2e;
+            background: linear-gradient(90deg, #f8cde0, #dbe7f0);
+            color: #4a3f55;
             text-align: center;
             padding: 2.5rem 1rem;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
+
         header h1 {
             font-size: 3rem;
             margin: 0;
             font-weight: 600;
         }
+
         header p {
             font-size: 1.2rem;
             margin-top: 0.5rem;
-            font-weight: 400;
+            font-weight: 500;
         }
 
         /* Sección About / Presentación */
         .about {
             padding: 3rem 1rem;
-            background-color: #ffffff;
+            background-color: #ffffffb8;
+            border-radius: 20px;
+            max-width: 1100px;
+            margin: 2rem auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
 
         .about-container {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
+            justify-content: center;
             gap: 2rem;
         }
 
@@ -53,17 +59,18 @@
             height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #e28ea6;
+            border: 4px solid #d8bfd8;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         .about-text {
             flex: 1;
             min-width: 250px;
+            text-align: center;
         }
 
         .about-text h2 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             margin-bottom: 1rem;
             color: #5a3749;
         }
@@ -71,12 +78,14 @@
         .about-text p {
             font-size: 1.1rem;
             color: #555;
+            max-width: 700px;
+            margin: 0 auto;
         }
 
         /* Sección de proyectos */
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
             padding: 2rem;
             max-width: 1200px;
@@ -85,21 +94,23 @@
 
         /* Tarjetas de proyectos */
         .project-card {
-            background-color: #fff;
+            background-color: #ffffff;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
 
         .project-image {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            border-bottom: 3px solid #eac7c7;
         }
 
         .project-content {
@@ -110,7 +121,7 @@
         .project-content h3 {
             margin: 1rem 0 0.5rem 0;
             font-size: 1.5rem;
-            color: #5a3749;
+            color: #6b3f5a;
         }
 
         .project-content p {
@@ -123,17 +134,18 @@
         .project-button {
             display: inline-block;
             margin: 0 auto;
-            padding: 0.7rem 1.3rem;
-            background-color: #e28ea6; /* rosa más fuerte */
-            color: #fff;
-            border-radius: 8px;
+            padding: 0.7rem 1.4rem;
+            background-color: #eac7c7;
+            color: #4a3f55;
+            border-radius: 10px;
             text-decoration: none;
             font-weight: 600;
-            transition: background-color 0.3s;
-            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
         }
+
         .project-button:hover {
-            background-color: #d26b8a; /* tono más oscuro al pasar el cursor */
+            background-color: #d8bfd8;
+            transform: scale(1.05);
         }
 
         /* Footer */
@@ -142,10 +154,11 @@
             padding: 2rem;
             color: #777;
             font-size: 0.9rem;
+            margin-top: 2rem;
         }
 
         footer a {
-            color: #d26b8a;
+            color: #c98bb9;
             text-decoration: none;
             font-weight: 600;
         }
@@ -168,7 +181,7 @@
             <img class="profile-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/perfil.png" alt="Mi foto">
             <div class="about-text">
                 <h2>Amy Marlene</h2>
-                <p>¡Hola! Soy estudiante de Ingeniería Biomédica y este es mi portafolio de proyectos. Explora mis trabajos haciendo clic en cada tarjeta.</p>
+                <p>¡Hola! Soy estudiante de Ingeniería Biomédica apasionada por los datos, la ciencia y el diseño. En este portafolio podrás explorar mis proyectos de análisis, modelado y visualización de datos con un toque creativo y pastel 💕.</p>
             </div>
         </div>
     </section>
@@ -180,7 +193,7 @@
             <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/proyecto1.png" alt="Proyecto 1">
             <div class="project-content">
                 <h3>Análisis de datos para estilos y patrones de sueño</h3>
-                <p>Analizar la relación entre hábitos de vida y niveles de estrés, identificando variables que afectan la salud y preparando los datos para un posible modelado predictivo.</p>
+                <p>Analiza la relación entre hábitos de vida y niveles de estrés, identificando variables que afectan la salud y preparando los datos para un posible modelado predictivo.</p>
                 <a href="https://github.com/amymarlene/Tarea-2-Analisis-de-datos-Clasificaci-n-Binaria" target="_blank" class="project-button">Ver repositorio</a>
             </div>
         </div>
@@ -190,7 +203,7 @@
             <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/Proyecto%202.png" alt="Proyecto 2">
             <div class="project-content">
                 <h3>Modelado de datos para estilos y patrones de sueño</h3>
-                <p>Este proyecto realiza la predicción de estrés basado en hábitos de sueño y parámetros físicos usando modelos de clasificación en Python. Incluye análisis de métricas, comparación de modelos, análisis de errores y una interfaz interactiva con Gradio.</p>
+                <p>Predicción de estrés basada en hábitos de sueño y parámetros físicos usando modelos de clasificación en Python. Incluye análisis de métricas y una interfaz interactiva con Gradio.</p>
                 <a href="https://github.com/amymarlene/Modelado-de-datos-Clasificacion-Binaria" target="_blank" class="project-button">Ver repositorio</a>
             </div>
         </div>
@@ -200,7 +213,7 @@
             <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/Analisis-De-Datos-Regresion/main/preview.png" alt="Proyecto 3">
             <div class="project-content">
                 <h3>Análisis de datos - Regresión para seguro médico</h3>
-                <p>Este proyecto analiza un dataset de 1,338 personas en Estados Unidos con información sobre costos de seguros médicos y variables demográficas y de salud.</p>
+                <p>Analiza un dataset de 1,338 personas en EE. UU. con información sobre costos de seguros médicos y variables demográficas y de salud. Incluye correlación, regresión y visualización de resultados.</p>
                 <a href="https://github.com/amymarlene/Analisis-De-Datos-Regresion" target="_blank" class="project-button">Ver repositorio</a>
             </div>
         </div>
