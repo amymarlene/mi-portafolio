@@ -1,224 +1,52 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <!-- Fuente elegante y moderna -->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Quicksand', sans-serif;
-            background: linear-gradient(to bottom right, #fde2e4, #f8edeb, #e2ece9, #cfe0e8);
-            color: #4a3f55;
-        }
-        /* Header */
-        header {
-            background: linear-gradient(90deg, #f8cde0, #dbe7f0);
-            color: #4a3f55;
-            text-align: center;
-            padding: 2.5rem 1rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-            font-weight: 600;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
-            font-weight: 500;
-        }
-        /* Sección About / Presentación */
-        .about {
-            padding: 3rem 1rem;
-            background-color: #ffffffb8;
-            border-radius: 20px;
-            max-width: 1100px;
-            margin: 2rem auto;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
-        .about-container {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-        }
-        .profile-image {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #d8bfd8;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        .about-text {
-            flex: 1;
-            min-width: 250px;
-            text-align: center;
-        }
-        .about-text h2 {
-            font-size: 2.3rem;
-            margin-bottom: 1rem;
-            color: #5a3749;
-        }
-        .about-text p {
-            font-size: 1.1rem;
-            color: #555;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        /* Sección de proyectos */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        /* Tarjetas de proyectos */
-        .project-card {
-            background-color: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-        .project-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 3px solid #eac7c7;
-        }
-        .project-content {
-            padding: 1.5rem;
-            text-align: center;
-        }
-        .project-content h3 {
-            margin: 1rem 0 0.5rem 0;
-            font-size: 1.5rem;
-            color: #6b3f5a;
-        }
-        .project-content p {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 1.5rem;
-        }
-        /* Botón “Ver repositorio” */
-        .project-button {
-            display: inline-block;
-            margin: 0 auto;
-            padding: 0.7rem 1.4rem;
-            background-color: #eac7c7;
-            color: #4a3f55;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-        .project-button:hover {
-            background-color: #d8bfd8;
-            transform: scale(1.05);
-        }
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #777;
-            font-size: 0.9rem;
-            margin-top: 2rem;
-        }
-        footer a {
-            color: #c98bb9;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Mi Portafolio</h1>
-        <p>Explora mis proyectos y sus repositorios en GitHub</p>
-    </header>
-
-    <!-- Sección About / Presentación -->
-    <section class="about">
-        <div class="about-container">
-            <img class="profile-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/perfil.png" alt="Mi foto">
-            <div class="about-text">
-                <h2>Amy Marlene</h2>
-                <p>¡Hola! Soy estudiante de Ingeniería Biomédica y este es mi portafolio de proyectos. Explora mis trabajos haciendo clic en cada tarjeta.</p>
-            </div>
+<!-- Sección Proyectos -->
+<section class="projects">
+    <!-- Proyecto 1 -->
+    <div class="project-card">
+        <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/proyecto1.png" alt="Proyecto 1">
+        <div class="project-content">
+            <h3>Análisis de datos para estilos y patrones de sueño</h3>
+            <p>Analiza la relación entre hábitos de vida y niveles de estrés, identificando variables que afectan la salud y preparando los datos para un posible modelado predictivo.</p>
+            <a href="https://github.com/amymarlene/Tarea-2-Analisis-de-datos-Clasificaci-n-Binaria" target="_blank" class="project-button">Ver repositorio</a>
         </div>
-    </section>
+    </div>
 
-    <!-- Sección Proyectos -->
-    <section class="projects">
-        <!-- Proyecto 1 -->
-        <div class="project-card">
-            <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/proyecto1.png" alt="Proyecto 1">
-            <div class="project-content">
-                <h3>Análisis de datos para estilos y patrones de sueño</h3>
-                <p>Analiza la relación entre hábitos de vida y niveles de estrés, identificando variables que afectan la salud y preparando los datos para un posible modelado predictivo.</p>
-                <a href="https://github.com/amymarlene/Tarea-2-Analisis-de-datos-Clasificaci-n-Binaria" target="_blank" class="project-button">Ver repositorio</a>
-            </div>
+    <!-- Proyecto 2 -->
+    <div class="project-card">
+        <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/Proyecto%202.png" alt="Proyecto 2">
+        <div class="project-content">
+            <h3>Modelado de datos para estilos y patrones de sueño</h3>
+            <p>Predicción de estrés basada en hábitos de sueño y parámetros físicos usando modelos de clasificación en Python. Incluye análisis de métricas y una interfaz interactiva con Gradio.</p>
+            <a href="https://github.com/amymarlene/Modelado-de-datos-Clasificacion-Binaria" target="_blank" class="project-button">Ver repositorio</a>
         </div>
+    </div>
 
-        <!-- Proyecto 2 -->
-        <div class="project-card">
-            <img class="project-image" src="https://raw.githubusercontent.com/amymarlene/mi-portafolio/main/Proyecto%202.png" alt="Proyecto 2">
-            <div class="project-content">
-                <h3>Modelado de datos para estilos y patrones de sueño</h3>
-                <p>Predicción de estrés basada en hábitos de sueño y parámetros físicos usando modelos de clasificación en Python. Incluye análisis de métricas y una interfaz interactiva con Gradio.</p>
-                <a href="https://github.com/amymarlene/Modelado-de-datos-Clasificacion-Binaria" target="_blank" class="project-button">Ver repositorio</a>
-            </div>
+    <!-- Proyecto 3 -->
+    <div class="project-card">
+        <img class="project-image" src="https://github.com/amymarlene/mi-portafolio/blob/main/Proyecto3.png?raw=true" alt="Proyecto 3 - Análisis de Datos (Regresión)">
+        <div class="project-content">
+            <h3>Análisis de datos - Regresión para seguro médico</h3>
+            <p>Analiza un dataset de 1,338 personas en EE. UU. con información sobre costos de seguros médicos y variables demográficas y de salud. Incluye correlación, regresión y visualización de resultados.</p>
+            <a href="https://github.com/amymarlene/Analisis-De-Datos-Regresion" target="_blank" class="project-button">Ver repositorio</a>
         </div>
+    </div>
 
-        <!-- Proyecto 3 -->
-        <div class="project-card">
-            <img class="project-image" src="https://github.com/amymarlene/mi-portafolio/blob/main/Proyecto3.png?raw=true" alt="Proyecto 3 - Análisis de Datos (Regresión)">
-            <div class="project-content">
-                <h3>Análisis de datos - Regresión para seguro médico</h3>
-                <p>Analiza un dataset de 1,338 personas en EE. UU. con información sobre costos de seguros médicos y variables demográficas y de salud. Incluye correlación, regresión y visualización de resultados.</p>
-                <a href="https://github.com/amymarlene/Analisis-De-Datos-Regresion" target="_blank" class="project-button">Ver repositorio</a>
-            </div>
+    <!-- Proyecto 4 -->
+    <div class="project-card">
+        <img class="project-image" src="https://github.com/amymarlene/mi-portafolio/blob/main/proyecto4.png?raw=true" alt="Proyecto 4 - Modelado de Datos de Regresión para Seguro Médico">
+        <div class="project-content">
+            <h3>Modelado de Datos de Regresión para Seguro Médico</h3>
+            <p>Predicción de costos de seguros médicos utilizando regresión y análisis de métricas. Incluye Random Forest como modelo final y una interfaz interactiva con Gradio para consultas de usuarios.</p>
+            <a href="https://github.com/amymarlene/Modelado-de-datos-Regresion-Para-Seguro-Medico" target="_blank" class="project-button">Ver repositorio</a>
         </div>
+    </div>
 
-        <!-- Proyecto 4 -->
-        <div class="project-card">
-            <img class="project-image" src="https://github.com/amymarlene/mi-portafolio/blob/main/proyecto4.png?raw=true" alt="Proyecto 4 - Modelado de Datos de Regresión para Seguro Médico">
-            <div class="project-content">
-                <h3>Modelado de Datos de Regresión para Seguro Médico</h3>
-                <p>Predicción de costos de seguros médicos utilizando regresión y análisis de métricas. Incluye Random Forest como modelo final y una interfaz interactiva con Gradio para consultas de usuarios.</p>
-                <a href="https://github.com/amymarlene/Modelado-de-datos-Regresion-Para-Seguro-Medico" target="_blank" class="project-button">Ver repositorio</a>
-            </div>
+    <!-- Proyecto 5 -->
+    <div class="project-card">
+        <img class="project-image" src="https://github.com/amymarlene/mi-portafolio/blob/main/cluster%20pca.png?raw=true" alt="Proyecto 5 - Segmentación por Estado Mental">
+        <div class="project-content">
+            <h3>Segmentación por Estado Mental — Análisis y Modelo</h3>
+            <p>Este proyecto busca segmentar individuos en distintos clusters según su estado mental, identificando patrones de riesgo y comportamiento. Se calculan métricas como inercia y silueta para optimizar la agrupación y se ofrece un análisis detallado por cluster, explicando el perfil de cada grupo: desde personas con alta probabilidad de suicidio hasta aquellas con riesgo de mortalidad temprana. Además, incluye un modelo de datos y una interfaz web interactiva para que los profesionales de la salud puedan explorar los resultados de manera sencilla y visual.</p>
+            <a href="https://github.com/amymarlene/Segmentaci-n-de-Salud-Mental-" target="_blank" class="project-button">Ver repositorio</a>
         </div>
-
-        <!-- Proyecto 5 -->
-        <div class="project-card">
-            <img class="project-image" src="https://github.com/amymarlene/mi-portafolio/blob/main/pca.png?raw=true" alt="Proyecto 5 - Análisis de Datos Global Suicide">
-            <div class="project-content">
-                <h3>Global Suicide - Análisis de Datos</h3>
-                <p>Análisis de datos sobre tendencias de suicidio a nivel global, explorando variables demográficas y socioeconómicas, visualización de patrones y preparación para posibles modelos predictivos.</p>
-                <a href="https://github.com/amymarlene/Analisis-de-Datos---Segmentacion" target="_blank" class="project-button">Ver repositorio</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2025 <a href="https://amymarlene.github.io/" target="_blank">amymarlene.github.io</a>. Todos los derechos reservados.
-    </footer>
-</body>
-</html>
-
+    </div>
+</section>
